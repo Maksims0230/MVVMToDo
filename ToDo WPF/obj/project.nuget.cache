@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "06WMl/Tdl8RguhfdMUmmn5bLCDLPnLz+jLut22LIDemFNC/HuX5eGv7TsLLPY/QOHL5NGztuqSH17FDndes3Ag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\maksi\\source\\repos\\ToDo WPF\\ToDo WPF\\ToDo WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maksi\\.nuget\\packages\\materialdesigncolors\\2.0.1\\materialdesigncolors.2.0.1.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\materialdesignthemes\\4.1.0\\materialdesignthemes.4.1.0.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

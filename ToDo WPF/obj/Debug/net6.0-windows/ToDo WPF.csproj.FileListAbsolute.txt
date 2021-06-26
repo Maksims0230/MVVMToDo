@@ -1,0 +1,28 @@
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\ToDo WPF.exe
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\ToDo WPF.deps.json
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\ToDo WPF.runtimeconfig.json
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\ToDo WPF.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\ref\ToDo WPF.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\ToDo WPF.pdb
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.csproj.AssemblyReference.cache
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF_MarkupCompile.cache
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF_MarkupCompile.lref
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\App.baml
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.g.resources
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.AssemblyInfoInputs.cache
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.AssemblyInfo.cs
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.csproj.CoreCompileInputs.cache
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.csproj.CopyComplete
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ref\ToDo WPF.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.pdb
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\ToDo WPF.genruntimeconfig.cache
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\Views\MainWindow.baml
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\Views\WallView.g.cs
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\Views\WallView.baml
