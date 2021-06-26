@@ -1,9 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
-using System.Windows;
 using ToDo_WPF.Annotations;
-using ToDo_WPF.Commands;
 
 namespace ToDo_WPF.ViewModels
 {
@@ -41,12 +39,6 @@ namespace ToDo_WPF.ViewModels
                 _password = value;
                 OnPropertyChanged();
             }
-        }
-
-        [JsonIgnore]
-        public DelegateCommand ClickSeeEmail
-        {
-            get { return new(obj => { MessageBox.Show(Email); }); }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

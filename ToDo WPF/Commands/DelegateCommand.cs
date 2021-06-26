@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Windows.Input;
 
 namespace ToDo_WPF.Commands
@@ -7,7 +8,7 @@ namespace ToDo_WPF.Commands
     {
         private readonly Func<object, bool> _canExecute;
 
-        private readonly Action<object> _execute;
+        [NotNull] private readonly Action<object> _execute;
 
         public DelegateCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {

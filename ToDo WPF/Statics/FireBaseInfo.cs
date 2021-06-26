@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
 using Firebase.Auth;
 using Firebase.Database;
 
@@ -17,11 +18,13 @@ namespace ToDo_WPF.Statics
             /// <summary>
             ///     (Web) Api ключ Fire Base
             /// </summary>
+            [NotNull]
             public static string ApiKey { get; } = "AIzaSyCwr9cdftW-rGOVbkV91Ln-A279Wtuk7SI";
 
             /// <summary>
             ///     Домен FireBase AuthReg
             /// </summary>
+            [NotNull]
             public static string Domain { get; } = "todolist-a5e59.firebaseapp.com";
 
             /// <summary>
@@ -38,11 +41,13 @@ namespace ToDo_WPF.Statics
             /// <summary>
             ///     Секретный ключ для FireBase Database
             /// </summary>
+            [NotNull]
             public static string SecretKey { get; } = "DyJJ3vBf5iwiEOkZ8tCoCqw582dukJbbXc8dAywT";
 
             /// <summary>
             ///     Ссылка до FireBase Database
             /// </summary>
+            [NotNull]
             public static string Url { get; } = "https://todolist-a5e59-default-rtdb.firebaseio.com/";
 
             /// <summary>

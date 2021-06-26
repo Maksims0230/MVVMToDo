@@ -8,14 +8,13 @@ using System.Text.Json.Serialization;
 using System.Windows;
 using ToDo_WPF.Annotations;
 using ToDo_WPF.Commands;
-using ToDo_WPF.Models;
 
 namespace ToDo_WPF.ViewModels
 {
     [JsonSerializable(typeof(WallViewModel), TypeInfoPropertyName = "СТЕНА")]
     public class WallViewModel : INotifyPropertyChanged
     {
-        [JsonIgnore] private string _id = DateTime.Now.ToString("yyyyMMddHHssfff");
+        [NotNull] [JsonIgnore] private string _id = DateTime.Now.ToString("yyyyMMddHHssfff");
 
         [JsonIgnore] private ObservableCollection<BoardViewModel> _wall;
 

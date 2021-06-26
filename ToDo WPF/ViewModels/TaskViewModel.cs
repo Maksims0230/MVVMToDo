@@ -8,7 +8,7 @@ namespace ToDo_WPF.ViewModels
     [JsonSerializable(typeof(TaskViewModel), TypeInfoPropertyName = "ЗАДАЧА")]
     public class TaskViewModel : INotifyPropertyChanged
     {
-        [JsonIgnore] private string _id;
+        [NotNull] [JsonIgnore] private string _id;
 
         [JsonIgnore] private string _name;
 
