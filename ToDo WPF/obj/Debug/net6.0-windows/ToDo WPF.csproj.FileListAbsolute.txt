@@ -26,3 +26,10 @@ C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\Views\Mai
 C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\Views\MainWindow.baml
 C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\Views\WallView.g.cs
 C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\obj\Debug\net6.0-windows\Views\WallView.baml
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\GongSolutions.WPF.DragDrop.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\Firebase.Auth.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\Firebase.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\LiteDB.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\System.Reactive.dll
+C:\Users\maksi\source\repos\ToDo WPF\ToDo WPF\bin\Debug\net6.0-windows\System.Runtime.InteropServices.WindowsRuntime.dll

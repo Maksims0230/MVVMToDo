@@ -1,19 +1,28 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Runtime.CompilerServices;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Windows;
 using ToDo_WPF.Annotations;
 using ToDo_WPF.Commands;
+using ToDo_WPF.Models;
 
 namespace ToDo_WPF.ViewModels
 {
     [JsonSerializable(typeof(WallViewModel), TypeInfoPropertyName = "СТЕНА")]
     public class WallViewModel : INotifyPropertyChanged
     {
-        [JsonIgnore] private string _id;
+        [JsonIgnore] private string _id = DateTime.Now.ToString("yyyyMMddHHssfff");
+
         [JsonIgnore] private ObservableCollection<BoardViewModel> _wall;
+
+        public WallViewModel()
+        {
+            Wall = new ObservableCollection<BoardViewModel>();
+        }
 
         [JsonInclude]
         [JsonPropertyName("НОМЕР")]
@@ -46,15 +55,17 @@ namespace ToDo_WPF.ViewModels
             {
                 return new(obj =>
                 {
-                    Id = "0";
+                    Id = Wall.Count.ToString();
                     BoardViewModel board = new() {Name = "Name"};
-                    board.Categories.Add(new CategoryViewModel {Id = "0", Name = "Category"});
-                    board.Tasks.Add(new TaskViewModel {Id = "0", Name = "Task", Description = "Description"});
+                    board.Categories.Add(new CategoryViewModel
+                        {Id = board.Categories.Count.ToString(), Name = "Category"});
+                    board.Tasks.Add(new TaskViewModel
+                        {Id = board.Tasks.Count.ToString(), Name = "Task", Description = "Description"});
                     Wall.Add(board);
                 });
             }
         }
-        
+
         [JsonIgnore]
         public DelegateCommand SeeBoards
         {
@@ -62,10 +73,7 @@ namespace ToDo_WPF.ViewModels
             {
                 return new(obj =>
                 {
-                    foreach (var board in Wall)
-                    {
-                        MessageBox.Show($"{board.Id}\r\n{board.Name}\r\n");
-                    }
+                    foreach (var board in Wall) MessageBox.Show($"{board.Id}\r\n{board.Name}\r\n");
                 });
             }
         }
@@ -73,14 +81,14 @@ namespace ToDo_WPF.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        protected virtual async void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+            await using (var file = new FileStream("Wall.json", FileMode.Create))
+            {
+                await JsonSerializer.SerializeAsync(file, this);
+            }
 
-        public WallViewModel()
-        {
-            this.Wall = new ObservableCollection<BoardViewModel>();
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

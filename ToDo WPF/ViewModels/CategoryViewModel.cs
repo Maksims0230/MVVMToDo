@@ -12,6 +12,12 @@ namespace ToDo_WPF.ViewModels
 
         [JsonIgnore] private string _name;
 
+        public CategoryViewModel()
+        {
+            Id = "";
+            Name = "";
+        }
+
         [JsonInclude]
         [JsonPropertyName("НОМЕР")]
         public string Id

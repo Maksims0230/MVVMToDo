@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:ToDo_WPF.ViewModels"
+        xmlns:dd="urn:gong-wpf-dragdrop"
         mc:Ignorable="d"
         Title="WallView" Height="450" Width="800">
 
@@ -19,7 +20,9 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <ListView Grid.Column="0" ItemsSource="{Binding Wall, Mode=TwoWay}">
+        <ListView Grid.Column="0" ItemsSource="{Binding Wall, Mode=TwoWay}"
+                  dd:DragDrop.IsDragSource="True" 
+                  dd:DragDrop.IsDropTarget="True">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Horizontal" />
@@ -38,7 +41,11 @@
                                  Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
                                  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" />
 
-                        <ListView Grid.Row="1" ItemsSource="{Binding Tasks, Mode=TwoWay}">
+                        <ListView Grid.Row="1" ItemsSource="{Binding Tasks, Mode=TwoWay}"
+                                  dd:DragDrop.IsDragSource="True" 
+                                  dd:DragDrop.IsDropTarget="True"
+                                  dd:DragDrop.DropHandler="{Binding}">
+
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid>

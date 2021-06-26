@@ -2,7 +2,6 @@
 using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
 using ToDo_WPF.Annotations;
-using ToDo_WPF.Commands;
 
 namespace ToDo_WPF.ViewModels
 {
@@ -11,9 +10,16 @@ namespace ToDo_WPF.ViewModels
     {
         [JsonIgnore] private string _id;
 
-        [JsonIgnore] private string _description;
-
         [JsonIgnore] private string _name;
+
+        [JsonIgnore] private string _description;
+        
+        public TaskViewModel()
+        {
+            Id = "";
+            Name = "";
+            Description = "";
+        }
 
         [JsonInclude]
         [JsonPropertyName("ID")]
